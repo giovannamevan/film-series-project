@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+nav {
+    display: block;
+}
+
+.login-button {
+    margin-left: auto;
+}
+
+.menu {
+    height: 50px;
+    overflow: hidden;
+}
+
+.menuOptions {
+    padding-top: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-infos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info {
+    flex: 0 0 calc(45% - 20px);
+    background-color: rgb(194, 194, 194);
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+}
+
+.info img {
+    height: 200px;
+    border-radius: 10px;
+    flex: 0 0 120px;
+    margin-right: 10px;
+}
+
+.text {
+    flex: 1;
+    font-size: 12px;
+}
+
+.series h3 {
+    color: blueviolet;
+}
+
+.filmes h3 {
+    color: green;
+}
+
+.documentarios h3 {
+    color: orangered;
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-field {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+.login-field label {
+    font-weight: bold;
+    align-self: center;
+}
+
+.login-field input {
+    width: 93%;
+    padding: 8px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+
+.login-field input:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-field button {
+    width: 100%;
+    padding: 10px;
+    background-color: darkgray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    grid-column: span 2;
+}
+.login-field button:hover {
+    background-color: black;
+}
+
+@media (max-width: 1000px) {
+    .menuOptions {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-color: black;
+    }
+
+    nav a {
+        margin-left: 16px;
+    }
+
+    .info {
+        flex: 0 0 calc(100% - 38px);
+        padding: 0;
+        margin: 10px;
+    }
+
+    @media (max-width: 535px) {
+        .info {
+            flex: 0 0 calc(100% - 20px);
+            }
+        .menu {
+                height: auto; 
+            }
+        
+        .menuOptions {
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+        .login-button {
+            margin: 0;
+        }
+        
+        nav {
+                display: block;
+            }
+        
+        nav a {
+                display: block;
+                margin: 0;
+                padding: 10px 16px;
+                text-align: center;
+         }
+    }
+}
